@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta( charset = 'utf8' )
+    meta( name = 'viewport', content = 'width=device-width, initial-scale=1.0' )
+    title NckuNextCourse
+
+    include /common/css.pug
+    +css( 'home/index' )
+
+  body
+    select#year.select__option
+      option( value = '0107' selected = 'selected' ) 107
+      option( value = '0108' ) 108
+      option( value = '0109' ) 109
+    select#sem.select__option
+      option( value = '1' ) 上學期
+      option( value = '2' ) 下學期
+    button#button.select__button 確認
+    main.content
+      include /common/content.pug
+      +content()
+    include /common/js.pug
+    +js( 'home/index' )
+    script(src = 'https://cdn.jsdelivr.net/npm/sweetalert2@7.31.1/dist/sweetalert2.all.min.js')

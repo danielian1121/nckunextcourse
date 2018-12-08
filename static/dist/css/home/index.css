@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column; }
+  body > .select__option {
+    margin-top: 2rem;
+    align-self: center;
+    width: 30%;
+    height: 3rem;
+    font-size: 1.5rem; }
+  body > .select__button {
+    margin-top: 2rem;
+    align-self: center;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem; }
+  body > .content {
+    display: grid;
+    grid-template-areas: '. content .' '. select  .';
+    grid-template-columns: 1fr 95% 1fr; }
+    body > .content > .dept__list.list {
+      display: grid;
+      grid-area: content;
+      grid-template-columns: repeat(auto-fit, 13rem);
+      justify-content: center; }
+      body > .content > .dept__list.list > .list__content {
+        margin-bottom: 100px;
+        border: #009900 solid 1px;
+        width: 200px;
+        height: 230px;
+        overflow: auto; }
+        @media screen and (min-width: 500px) {
+          body > .content > .dept__list.list > .list__content {
+            margin-bottom: 10px; } }
+        body > .content > .dept__list.list > .list__content > .theader {
+          background: url("http://course-query.acad.ncku.edu.tw/qry/image/h4_bg_green.jpg") no-repeat top left; }
+        body > .content > .dept__list.list > .list__content > .tbody > .dept a {
+          text-decoration: none;
+          font-size: 1rem; }
+        body > .content > .dept__list.list > .list__content > .tbody > .institute a {
+          text-decoration: none;
+          color: #442222; }
+
+/*# sourceURL=/home/sukamo/demo/nckunextcourse/static/src/scss/home/static/src/scss/home/index.scss */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3N1a2Ftby9kZW1vL25ja3VuZXh0Y291cnNlL3N0YXRpYy9zcmMvc2Nzcy9ob21lL3N0YXRpYy9zcmMvc2Nzcy9ob21lL2luZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFhO0VBQ2IsdUJBQXNCLEVBdUR2QjtFQXpERDtJQUlJLGlCQUFnQjtJQUNoQixtQkFBa0I7SUFDbEIsV0FBVTtJQUNWLGFBQVk7SUFDWixrQkFBaUIsRUFDbEI7RUFUSDtJQVdJLGlCQUFnQjtJQUNoQixtQkFBa0I7SUFDbEIsYUFBWTtJQUNaLGFBQVk7SUFDWixrQkFBaUIsRUFDbEI7RUFoQkg7SUFrQkksY0FBYTtJQUVYLGlEQUVhO0lBQ2IsbUNBQW9CLEVBaUN2QjtJQXhESDtNQTBCTSxjQUFhO01BRVgsbUJBQWE7TUFDYiwrQ0FBeUM7TUFFM0Msd0JBQXVCLEVBd0J4QjtNQXZETDtRQWlDUSxxQkFBb0I7UUFDcEIsMEJBQXlCO1FBQ3pCLGFBQVk7UUFDWixjQUFhO1FBQ2IsZUFBYyxFQWlCZjtRQWhCQztVQXRDUjtZQXVDVSxvQkFBbUIsRUFldEIsRUFBQTtRQXREUDtVQTBDVSxxR0FBb0csRUFDckc7UUEzQ1Q7VUE4Q1ksc0JBQXFCO1VBQ3JCLGdCQUFlLEVBQ2hCO1FBaERYO1VBa0RZLHNCQUFxQjtVQUNyQixlQUFjLEVBQ2YiLCJmaWxlIjoiaW5kZXguc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICA+IC5zZWxlY3RfX29wdGlvbiB7XG4gICAgbWFyZ2luLXRvcDogMnJlbTtcbiAgICBhbGlnbi1zZWxmOiBjZW50ZXI7XG4gICAgd2lkdGg6IDMwJTtcbiAgICBoZWlnaHQ6IDNyZW07XG4gICAgZm9udC1zaXplOiAxLjVyZW07XG4gIH1cbiAgPiAuc2VsZWN0X19idXR0b24ge1xuICAgIG1hcmdpbi10b3A6IDJyZW07XG4gICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgIHdpZHRoOiAxMHJlbTtcbiAgICBoZWlnaHQ6IDNyZW07XG4gICAgZm9udC1zaXplOiAxLjVyZW07XG4gIH1cbiAgPiAuY29udGVudCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlOiB7XG4gICAgICBhcmVhczpcbiAgICAgICcuIGNvbnRlbnQgLidcbiAgICAgICcuIHNlbGVjdCAgLic7XG4gICAgICBjb2x1bW5zOiAxZnIgOTUlIDFmcjtcbiAgICB9XG4gICAgPiAuZGVwdF9fbGlzdC5saXN0IHtcbiAgICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgICBncmlkOiB7XG4gICAgICAgIGFyZWE6IGNvbnRlbnQ7XG4gICAgICAgIHRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdChhdXRvLWZpdCwgMTNyZW0pO1xuICAgICAgfVxuICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICA+IC5saXN0X19jb250ZW50IHtcbiAgICAgICAgbWFyZ2luLWJvdHRvbTogMTAwcHg7XG4gICAgICAgIGJvcmRlcjogIzAwOTkwMCBzb2xpZCAxcHg7XG4gICAgICAgIHdpZHRoOiAyMDBweDtcbiAgICAgICAgaGVpZ2h0OiAyMzBweDtcbiAgICAgICAgb3ZlcmZsb3c6IGF1dG87XG4gICAgICAgIEBtZWRpYSBzY3JlZW4gYW5kICggbWluLXdpZHRoOiA1MDBweCApIHtcbiAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG4gICAgICAgID4gLnRoZWFkZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHVybCgnaHR0cDovL2NvdXJzZS1xdWVyeS5hY2FkLm5ja3UuZWR1LnR3L3FyeS9pbWFnZS9oNF9iZ19ncmVlbi5qcGcnKSBuby1yZXBlYXQgdG9wIGxlZnQ7XG4gICAgICAgIH1cbiAgICAgICAgPiAudGJvZHkge1xuICAgICAgICAgID4gLmRlcHQgYSB7XG4gICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgICAgICBmb250LXNpemU6IDFyZW07XG4gICAgICAgICAgfVxuICAgICAgICAgID4gLmluc3RpdHV0ZSBhIHtcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgICAgICAgIGNvbG9yOiAjNDQyMjIyO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */

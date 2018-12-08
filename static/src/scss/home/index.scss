@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  > .select__option {
+    margin-top: 2rem;
+    align-self: center;
+    width: 30%;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  > .select__button {
+    margin-top: 2rem;
+    align-self: center;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  > .content {
+    display: grid;
+    grid-template: {
+      areas:
+      '. content .'
+      '. select  .';
+      columns: 1fr 95% 1fr;
+    }
+    > .dept__list.list {
+      display: grid;
+      grid: {
+        area: content;
+        template-columns: repeat(auto-fit, 13rem);
+      }
+      justify-content: center;
+      > .list__content {
+        margin-bottom: 100px;
+        border: #009900 solid 1px;
+        width: 200px;
+        height: 230px;
+        overflow: auto;
+        @media screen and ( min-width: 500px ) {
+          margin-bottom: 10px;
+        }
+        > .theader {
+          background: url('http://course-query.acad.ncku.edu.tw/qry/image/h4_bg_green.jpg') no-repeat top left;
+        }
+        > .tbody {
+          > .dept a {
+            text-decoration: none;
+            font-size: 1rem;
+          }
+          > .institute a {
+            text-decoration: none;
+            color: #442222;
+          }
+        }
+      }
+    }
+  }
+}
