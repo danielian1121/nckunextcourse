@@ -12,6 +12,12 @@ Array.from( document.getElementsByClassName('dept') )
   a[0].href += `&syear=${querySyear}&sem=${querySem}`
 } )
 
+Array.from( document.getElementsByClassName('institute') )
+.forEach( item => {
+  const a = item.getElementsByTagName('a')
+  a[0].href += `&syear=${querySyear}&sem=${querySem}`
+} )
+
 year.value = querySyear
 sem.value = querySem
 
